@@ -1,0 +1,23 @@
+{
+ "Python": [
+     {"word": "def", "desc": "함수를 정의할 때 사용하는 키워드"},
+     {"word": "import", "desc": "모듈을 불러올 때 사용"},
+     {"word": "list", "desc": "순서가 있는 수정 가능한 객체 집합"},
+     {"word": "tuple", "desc": "순서가 있지만 수정 불가능한 집합"},
+     {"word": "lambda", "desc": "익명 함수를 생성하는 키워드"}
+ ],
+ "Java": [
+     {"word": "public", "desc": "어디서든 접근 가능한 접근 제어자"},
+     {"word": "static", "desc": "클래스 레벨의 변수나 메서드 선언"},
+     {"word": "void", "desc": "반환 값이 없음을 의미"},
+     {"word": "final", "desc": "상수나 상속 불가능을 의미"},
+     {"word": "class", "desc": "객체를 생성하기 위한 설계도"}
+ ],
+ "HTML_CSS": [
+     {"word": "div", "desc": "구역을 나누는 태그"},
+     {"word": "span", "desc": "인라인 요소를 그룹화하는 태그"},
+     {"word": "href", "desc": "링크의 목적지 URL 지정"},
+     {"word": "margin", "desc": "요소의 바깥쪽 여백"},
+     {"word": "padding", "desc": "요소의 안쪽 여백"}
+ ]
+}

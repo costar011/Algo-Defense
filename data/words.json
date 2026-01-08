@@ -4,7 +4,21 @@
     { "word": "import", "desc": "모듈을 불러올 때 사용" },
     { "word": "list", "desc": "순서가 있는 수정 가능한 객체 집합" },
     { "word": "tuple", "desc": "순서가 있지만 수정 불가능한 집합" },
-    { "word": "lambda", "desc": "익명 함수를 생성하는 키워드" }
+    { "word": "lambda", "desc": "익명 함수를 생성하는 키워드" },
+    { "word": "expression", "desc": "값을 만들어내는 코드 (예: 10+20, \"Hello\")" },
+    { "word": "statement", "desc": "하나 이상의 표현식으로 이루어진 실행 가능한 코드 라인 (예: x = 10)" },
+    { "word": "data", "desc": "숫자, 문자열, 리스트 등 실제 값 (예: 10, \"Python\")" },
+    { "word": "operator", "desc": "산술(+, -), 비교(==, >), 논리(and, or) 등을 수행하는 기호" },
+    { "word": "identifier", "desc": "변수, 함수 등을 프로그래머가 짓는 이름 (규칙 있음)" },
+    { "word": "keyword", "desc": "파이썬 예약어 (if, else, def, return 등)" },
+    { "word": "variable", "desc": "데이터를 저장하는 메모리 공간의 이름" },
+    { "word": "function", "desc": "특정 작업을 수행하는 코드 블록(def로 정의, print() 등 내장 함수)" },
+    { "word": "method", "desc": "객체에 속한 함수 (클래스 내에서 정의)" },
+    { "word": "object", "desc": "데이터와 메서드를 묶어놓은 실체" },
+    { "word": "class", "desc": "객체를 만들기 위한 설계도 (속성(변수)과 메서드를 포함)" },
+    { "word": "module", "desc": "함수, 변수 등을 담은 파이썬 파일 (.py)" },
+    { "word": "package", "desc": "여러 모듈을 모아놓은 디렉토리" },
+    { "word": "library", "desc": "관련 패키지들을 모아놓은 큰 단위 (예: NumPy, Pandas)" }
 ],
 "Java": [
     { "word": "public", "desc": "어디서든 접근 가능한 접근 제어자" },
@@ -13,12 +27,19 @@
     { "word": "final", "desc": "상수나 상속 불가능을 의미" },
     { "word": "class", "desc": "객체를 생성하기 위한 설계도" }
 ],
-"HTML_CSS": [
+"HTML": [
     { "word": "div", "desc": "구역을 나누는 태그" },
     { "word": "span", "desc": "인라인 요소를 그룹화하는 태그" },
     { "word": "href", "desc": "링크의 목적지 URL 지정" },
+    { "word": "class", "desc": "요소에 클래스를 지정하는 속성" },
+    { "word": "id", "desc": "요소에 고유 식별자를 지정하는 속성" }
+],
+"CSS": [
     { "word": "margin", "desc": "요소의 바깥쪽 여백" },
-    { "word": "padding", "desc": "요소의 안쪽 여백" }
+    { "word": "padding", "desc": "요소의 안쪽 여백" },
+    { "word": "display", "desc": "요소의 표시 방식을 지정" },
+    { "word": "flex", "desc": "플렉스박스 레이아웃을 설정" },
+    { "word": "grid", "desc": "그리드 레이아웃을 설정" }
 ],
 "C++": [
     { "word": "class", "desc": "객체를 정의하는 키워드" },

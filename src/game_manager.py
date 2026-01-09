@@ -41,6 +41,10 @@ class GameManager:
         # 용어 공부 스크롤 관련
         self.study_scroll_offset = 0
         self.study_max_scroll = 0
+        
+        # 입력 커서 관련
+        self.cursor_timer = 0
+        self.cursor_visible = True
 
     def run(self):
         """게임 메인 루프"""
@@ -271,6 +275,12 @@ class GameManager:
             # 나머지 스프라이트 업데이트
             self.enemies.update()
             self.bullets.update()
+            
+            # 커서 깜빡임 업데이트 (약 0.5초마다)
+            self.cursor_timer += 1
+            if self.cursor_timer >= FPS // 2:  # 0.5초마다 토글
+                self.cursor_timer = 0
+                self.cursor_visible = not self.cursor_visible
 
     def _draw_broken_heart(self, screen, x, y, size):
         """깨진 하트 그리기"""
@@ -397,8 +407,19 @@ class GameManager:
                     # 깨진 하트 그리기
                     self._draw_broken_heart(self.screen, heart_x + i * 35, heart_y, heart_size)
             
-            input_surf = self.font.render(f"Input: {self.input_text}", True, YELLOW)
+            input_surf = self.font.render(f"Target: {self.input_text}", True, YELLOW)
             self.screen.blit(input_surf, (10, SCREEN_HEIGHT - 40))
+            
+            # 깜빡이는 커서 그리기
+            if self.cursor_visible:
+                input_text_width = self.font.size(f"Target: {self.input_text}")[0]
+                cursor_x = 10 + input_text_width
+                cursor_y = SCREEN_HEIGHT - 40
+                cursor_height = self.font.get_height()
+                # 커서를 세로선으로 그리기
+                pygame.draw.line(self.screen, YELLOW, 
+                (cursor_x, cursor_y), 
+                (cursor_x, cursor_y + cursor_height), 3)
         
         elif self.state == "COUNTDOWN":
             # 카운트다운 화면
